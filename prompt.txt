@@ -1,0 +1,273 @@
+You are a senior full-stack engineer and UI/UX developer.
+
+Build a fully responsive, modern, animated romantic web application called:
+
+"444 — A Love You Played Through"
+
+This is a single-user emotional interactive experience combining:
+- Story-driven progression
+- Mini-games
+- 444 interactive floating hearts
+- Message unlocking system
+- Custom admin dashboard (NOT Django default admin UI)
+
+---
+
+# 🧠 CORE CONCEPT
+
+The application is a romantic interactive story disguised as a game.
+
+User experience goals:
+- Emotional immersion
+- Obsession-building engagement
+- Smooth animations
+- Story progression through interaction
+
+Tone:
+- Soft + dark romantic mix
+- Emotional, poetic UI
+- Modern aesthetic
+
+---
+
+# 🧱 TECH STACK
+
+Frontend:
+- HTML5
+- CSS3 (modern animations, glow effects)
+- JavaScript (core logic)
+- Three.js (optional background effects)
+
+Backend:
+- Django (custom APIs only, no default admin UI)
+- SQLite database
+
+Admin Panel:
+- Fully custom-built dashboard UI
+
+---
+
+# 🎨 DESIGN SYSTEM
+
+Theme:
+- Black + Purple dominant color palette
+
+Style:
+- Romantic + modern + glowing UI
+- Handwritten-style font
+- Soft blur + glow effects
+
+Animations:
+- Floating hearts
+- Cursor-follow interaction
+- Smooth fade transitions
+- Message whisper effects near cursor
+
+---
+
+# 🏠 HOME PAGE
+
+Features:
+- 444 floating hearts on screen
+- Hearts slightly follow cursor movement
+- Background is dark, glowing purple ambiance
+- Music does NOT start automatically
+
+Interaction:
+- Clicking a heart:
+  - Heart disappears with animation
+  - Shows a whisper-style message near cursor
+  - Displays overlay text:
+    "Happy Birthday Gudiyaaa, I love youuuu"
+
+Rules:
+- Each heart = unique message
+- Total messages = 444
+- No repetition allowed
+
+---
+
+# 🎬 ENTRY FLOW
+
+Landing screen:
+Button:
+"Enter if you dare..."
+
+On click:
+- Play intro animation:
+  "Happy birthday gudiyaaa, I love you the mostttt."
+- Then transition to login screen
+
+---
+
+# 🔐 LOGIN SYSTEM
+
+- Fixed username/password (hardcoded)
+- No signup system
+
+Wrong login attempt message:
+"You forgot already?"
+
+Correct login:
+→ Redirect to game screen
+
+---
+
+# 🎮 GAME SYSTEM
+
+Include 2–3 mini-games:
+- Simple interaction-based games
+- Easy difficulty
+- Emotion > challenge
+
+Examples:
+- Click timing game
+- Memory matching game
+- Heart catching game
+
+Game Rules:
+- Win condition: after 3 wins → reward unlocked
+- Lose condition: instant retry from same level
+
+---
+
+# 💌 MESSAGE SYSTEM
+
+## Short Messages (444 total)
+- Triggered by heart clicks
+- Each heart = one unique message
+- Length: 3–5 poetic lines
+- Style: human-like emotional writing
+- No repetition allowed
+
+Display style:
+- Whisper text near cursor with animation
+
+---
+
+## Reward Messages
+- Triggered after every 3 game wins
+- Delivered in sequential order
+- Longer emotional messages
+- May include:
+  - Text
+  - Voice notes (optional upload system)
+  - Images (optional)
+
+---
+
+# 📊 PROGRESS SYSTEM
+
+Admin-only visibility:
+- Hearts clicked count
+- Messages unlocked
+- Game progress
+- Wins/losses tracking
+
+User side:
+- Progress is hidden
+
+---
+
+# 💬 MESSAGING SYSTEM
+
+User feature:
+- Can send messages
+
+Admin feature:
+- Can view all messages
+- Can reply to messages
+
+Works for:
+- Short messages context
+- Reward messages context
+
+---
+
+# 🔒 ADMIN DASHBOARD (CUSTOM BUILD)
+
+Do NOT use Django default admin UI.
+
+Must include:
+- Modern dashboard UI
+- Stats overview:
+  - Hearts clicked
+  - Messages unlocked
+  - Game progress
+- Message inbox:
+  - User messages
+  - Reply system
+- Progress tracking view
+
+---
+
+# 🎭 HIDDEN FEATURES
+
+- Rare hearts (special messages)
+- Secret clickable zones
+- Hidden emotional messages
+
+---
+
+# 🔊 AUDIO SYSTEM
+
+- Background music: piano (romantic tone)
+- Starts only after user interaction
+- Sound effects:
+  - Heart click sound
+  - Message reveal sound
+
+---
+
+# 📱 RESPONSIVENESS
+
+Fully responsive:
+- Mobile
+- Tablet
+- Desktop
+
+Ensure:
+- Smooth animations on all devices
+- No layout breaking
+
+---
+
+# ⚙️ BACKEND REQUIREMENTS
+
+API endpoints:
+- /login
+- /hearts/click
+- /messages
+- /game/result
+- /progress
+- /admin/messages
+
+Data tracking:
+- Unique heart clicks
+- Message index tracking
+- Game win/loss tracking
+
+---
+
+# 🧠 IMPORTANT RULES
+
+- No repeated messages anywhere
+- All 444 heart messages must be unique
+- System must prevent duplication
+- Keep UI smooth and lightweight
+- Focus on emotional experience over complexity
+
+---
+
+# 🎯 FINAL OUTPUT EXPECTATION
+
+Generate:
+- Full frontend UI
+- Backend Django structure
+- Database schema
+- Custom admin panel UI
+- Working game system
+- Heart interaction system
+- Message unlocking system
+
+Project must be production-ready structure, not a prototype.
