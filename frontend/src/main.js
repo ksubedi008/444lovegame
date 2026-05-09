@@ -87,7 +87,6 @@ function renderHomeUI() {
     const btn = document.createElement('button');
     btn.className = 'btn';
     btn.innerText = 'Enter if you dare...';
-    btn.style.marginTop = '80vh'; // Position near bottom
     btn.onclick = () => {
         btn.style.display = 'none';
         playIntro();
