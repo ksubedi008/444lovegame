@@ -17,6 +17,10 @@
     {
       "source": "/api/(.*)",
       "destination": "/backend/config/wsgi.py"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }
