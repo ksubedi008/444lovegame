@@ -247,6 +247,19 @@ function renderGameUI() {
         }
     };
     
+    const homeBtn = document.createElement('button');
+    homeBtn.className = 'btn';
+    homeBtn.innerText = 'Home';
+    homeBtn.style.position = 'absolute';
+    homeBtn.style.top = '20px';
+    homeBtn.style.right = '20px';
+    homeBtn.style.margin = '0';
+    homeBtn.style.padding = '8px 16px';
+    homeBtn.style.fontSize = '1rem';
+    homeBtn.onclick = () => {
+        window.location.reload();
+    };
+    
     startBtn.onclick = () => {
         isPlaying = true;
         startBtn.style.display = 'none';
@@ -342,6 +355,7 @@ function renderGameUI() {
     overlay.appendChild(gameArea);
     overlay.appendChild(btnGroup);
     overlay.appendChild(resetBtn);
+    overlay.appendChild(homeBtn);
     
     document.getElementById('app').appendChild(overlay);
 }
