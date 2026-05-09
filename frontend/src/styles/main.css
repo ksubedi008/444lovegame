@@ -172,3 +172,16 @@ input:focus {
   50% { transform: translate(-50%, -100%) scale(1.2); opacity: 1; }
   100% { transform: translate(-50%, -150%) scale(1.5); opacity: 0; }
 }
+
+@media (max-width: 480px) {
+  .game-area {
+    width: 200px;
+    height: 200px;
+    margin: 10px 0;
+  }
+  .btn {
+    padding: 8px 16px;
+    font-size: 1.2rem;
+    margin: 5px;
+  }
+}

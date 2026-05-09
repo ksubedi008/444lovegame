@@ -257,8 +257,9 @@ function renderGameUI() {
     
     function moveTarget() {
         if(!isPlaying) return;
-        const x = Math.random() * 250;
-        const y = Math.random() * 250;
+        const maxPos = gameArea.clientWidth - 50; // Target is 50px
+        const x = Math.random() * maxPos;
+        const y = Math.random() * maxPos;
         target.style.left = x + 'px';
         target.style.top = y + 'px';
         target.style.transform = 'scale(0)';
