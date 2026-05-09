@@ -226,7 +226,6 @@ function renderGameUI() {
     const rewardBtn = document.createElement('button');
     rewardBtn.className = 'btn';
     rewardBtn.innerText = 'View Rewards';
-    rewardBtn.style.marginTop = '10px';
     rewardBtn.onclick = renderRewardsUI;
     
     const resetBtn = document.createElement('button');
@@ -331,9 +330,17 @@ function renderGameUI() {
     
     overlay.appendChild(title);
     overlay.appendChild(desc);
+    const btnGroup = document.createElement('div');
+    btnGroup.style.display = 'flex';
+    btnGroup.style.gap = '15px';
+    btnGroup.style.justifyContent = 'center';
+    btnGroup.style.width = '100%';
+    
+    btnGroup.appendChild(startBtn);
+    btnGroup.appendChild(rewardBtn);
+    
     overlay.appendChild(gameArea);
-    overlay.appendChild(startBtn);
-    overlay.appendChild(rewardBtn);
+    overlay.appendChild(btnGroup);
     overlay.appendChild(resetBtn);
     
     document.getElementById('app').appendChild(overlay);
