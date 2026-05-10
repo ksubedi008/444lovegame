@@ -40,7 +40,7 @@ function renderHomeUI() {
         hoverText.style.color = '#ffffff';
         hoverText.style.textShadow = '0 0 15px #ff0000, 0 0 30px #ff0000';
         hoverText.style.pointerEvents = 'none';
-        hoverText.style.whiteSpace = 'nowrap';
+        hoverText.style.textAlign = 'center';
         hoverText.style.fontFamily = "'Caveat', cursive";
         hoverText.style.zIndex = '5';
         

@@ -131,7 +131,6 @@ export class HeartScene {
         const div = document.createElement('div');
         div.className = 'whisper-message';
         div.innerText = text;
-        div.style.left = x + 'px';
         div.style.top = y + 'px';
         document.body.appendChild(div);
         
@@ -143,7 +142,7 @@ export class HeartScene {
         
         setTimeout(() => {
             div.remove();
-        }, 3000);
+        }, 4000);
     }
     
     animate() {
