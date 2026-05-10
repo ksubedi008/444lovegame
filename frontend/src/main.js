@@ -18,7 +18,7 @@ function initApp() {
     const audio = document.createElement('audio');
     audio.id = 'bgm';
     audio.loop = true;
-    audio.src = '/bgm-placeholder.mp3'; // The user will provide this later
+    audio.src = '/bgm.mp3'; // Playing the background music
     app.appendChild(audio);
 
     // Initial UI State (Home + Entry Button)
